@@ -51,7 +51,7 @@ l'ordinador. Molta sort amb el teu projecte!
         Una impresora termica es incombustible para sacar tickets, no precisan de tinta y son muy resistentes.
     
 4. | Desglose    |   |
-|--------------------------------------|---|
+|--------------|---|
 | Precio componentes                   | 604,07 Euros |
 | Precio montaje                       | 50 Euros |
 | Licencias (Windows, POS)             | 200 Euros |
@@ -82,7 +82,7 @@ Le paso el nuevo presupuesto
 | Desglose    |   |
 |--------------------------------------|---|
 | Precio portatil                   | 259,94 |
-| Precio Impresora térmica                   | 62,99 |
+| Precio Impresora térmica y cajón portamonedas                 | 112,99 |
 | Licencias (Windows, POS)             | 200 Euros |
 | Configuración y documentación de uso | 200 Euros |
 | Envío                                | 20 Euros |
