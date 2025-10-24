@@ -11,9 +11,22 @@ Els passos a seguir per a confeccionar l’esquema E-R són:
 2. Anotar “Altres Restriccions d’Integritat”
 3. Anotar “Suposicions”
 
+## BBDD ER De un juego de rol
+
 En un juego de rol hay personajes controlados por personas.
 
-- Las personas son entidades reales y únicas. Tienen nombre, fecha de nacimiento, etc.
+- Los jugadores son entidades reales y únicas. Tienen nombre, fecha de nacimiento, etc.
 - Los personajes son entidades ficticias y repetibles. Tienen nombre, atributos, raza, etc.
     - Estos personajes pueden tener caracteristicas diferentes y particularidades
+    - Los personajes pueden tener una raza y una clase.
+    - Cada especialización aporta unas caracteristicas según la clase/raza
 - La relación de estas dos entidades es que las personas pueden controlar personajes y estos personajes interactuar entre ellos
+
+
+Restricciones: 
+
+En un principio, tanto las clases como las razas puedes seleccionar una.
+
+Suposiciones:
+
+Se ha abierto la puerta para que se implemente hibridaciones de clase y raza, por eso pongo que son parciales.
