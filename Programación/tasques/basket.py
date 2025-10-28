@@ -22,7 +22,7 @@ for i in range(1, 5):
         if canasta == 0:
             print(f"Se acabó el cuarto {i}")
             print("--------------")
-            print("Canastas en este cuarto")
+            print(f"Canastas en este cuarto n {i}")
             print(f"{equipoA}: {puntuacionParcialA} puntos")
             print(f"{equipoB}: {puntuacionParcialB} puntos")
             print("--------------")
@@ -48,8 +48,8 @@ for i in range(1, 5):
             print (f"Diferencia actual {diferencia} \nDiferencia máxima ")
             print("--------------")
         #Este código es para 
-        else: canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B"
-        print("Datos invalidos, ingrese de nuevo")
+        elif canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B":
+            print("Datos invalidos, ingrese de nuevo")
         #Esta parte de código es para el contador de tiros y su valor.
         if canasta == 1:
             contador1 = contador1 + 1
