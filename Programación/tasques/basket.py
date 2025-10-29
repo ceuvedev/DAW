@@ -22,7 +22,7 @@ for i in range(1, 5):
         if canasta == 0:
             print(f"Se acabó el cuarto {i}")
             print("--------------")
-            print("Canastas en este cuarto")
+            print(f"Canastas en este cuarto n {i}")
             print(f"{equipoA}: {puntuacionParcialA} puntos")
             print(f"{equipoB}: {puntuacionParcialB} puntos")
             print("--------------")
@@ -47,8 +47,9 @@ for i in range(1, 5):
             print(f"{equipoB}: {puntuacionFinalB} puntos")
             print (f"Diferencia actual {diferencia} \nDiferencia máxima ")
             print("--------------")
-        else: canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B"
-        print("Datos invalidos, ingrese de nuevo")
+        #Este código es para 
+        elif canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B":
+            print("Datos invalidos, ingrese de nuevo")
         #Esta parte de código es para el contador de tiros y su valor.
         if canasta == 1:
             contador1 += 1
@@ -58,7 +59,8 @@ for i in range(1, 5):
             contador3 += 1
 
 #Cuando acaba el bucle de los cuartos, continua con esta parte del codigo, que es el final del partido.
-print("Fin del partido")
+print(f"Fin del partido\n {equipoA}: {puntuacionFinalA} puntos\n {equipoB}: {puntuacionFinalB} puntos")
+
 if puntuacionFinalA > puntuacionFinalB:
     print(f"Ha ganado equipo {equipoA}")
 else: 
@@ -68,3 +70,5 @@ print("")
 print(f"Tiros libres {contador1}")
 print(f"Tiros dobles {contador2}")
 print(f"Tiros triples {contador3}")
+
+# Problemas actuales: No se como implementar el contador de manera correcta la diferencia, el acumulador de maxima lo he intentado implementar pero guarda el valor. Otro punto que antes funcionaba y ahora no, es que siempre aparece error cuando doy los puntos, pero suma correctamente.
