@@ -18,7 +18,7 @@ for i in range(1, 5):
         #Pido el valor de la canasta
         canasta = int(input("Puedes indicarme el valor de la canasta? "))
         diferencia = abs(puntuacionParcialA - puntuacionParcialB)
-        #Si sale cero, directamente hacemos el break e incrementamos i.
+        #Si sale cero, directamente hacemos el break y cambiamos de cuarto.
         if canasta == 0:
             print(f"Se acabó el cuarto {i}")
             print("--------------")
@@ -51,11 +51,11 @@ for i in range(1, 5):
         print("Datos invalidos, ingrese de nuevo")
         #Esta parte de código es para el contador de tiros y su valor.
         if canasta == 1:
-            contador1 = contador1 + 1
+            contador1 += 1
         if canasta == 2:
-            contador2 = contador2 + 1
+            contador2 += 1
         if canasta == 3:
-            contador3 = contador3 + 1
+            contador3 += 1
 
 #Cuando acaba el bucle de los cuartos, continua con esta parte del codigo, que es el final del partido.
 print("Fin del partido")
