@@ -18,6 +18,9 @@ for i in range(1, 5):
         #Pido el valor de la canasta
         canasta = int(input("Puedes indicarme el valor de la canasta? "))
         diferencia = abs(puntuacionParcialA - puntuacionParcialB)
+        max = 0
+        if (diferencia > max):
+            max = diferencia
         #Si sale cero, directamente hacemos el break y cambiamos de cuarto.
         if canasta == 0:
             print(f"Se acabó el cuarto {i}")
@@ -29,14 +32,14 @@ for i in range(1, 5):
             break
         #En caso de no ser cero, pasamos a la siguiente workflow
         equipo = input("Puedes indicarme el equipo? (A/B) ").upper()    
-        if canasta >= 1 and canasta <= 3 and equipo == "A":
+        if canasta >= 1 and canasta <= 3 and equipo == "A":            
             puntuacionParcialA += canasta
             puntuacionFinalA += canasta
             print("--------------")
             print(f"{canasta} puntos para {equipoA}")
             print(f"{equipoA}: {puntuacionFinalA} puntos")
             print(f"{equipoB}: {puntuacionFinalB} puntos")
-            print (f"Diferencia actual {diferencia} \nDiferencia máxima ")
+            print (f"Diferencia actual {diferencia} \nDiferencia máxima {max} ")
             print("--------------")
         elif canasta >= 1 and canasta <= 3 and equipo == "B":
             puntuacionParcialB += canasta
@@ -45,7 +48,7 @@ for i in range(1, 5):
             print(f"{canasta} puntos para {equipoB}")
             print(f"{equipoA}: {puntuacionFinalA} puntos")
             print(f"{equipoB}: {puntuacionFinalB} puntos")
-            print (f"Diferencia actual {diferencia} \nDiferencia máxima ")
+            print (f"Diferencia actual {diferencia} \nDiferencia máxima {max}")
             print("--------------")
         #Este código es para 
         elif canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B":
