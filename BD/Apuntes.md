@@ -90,3 +90,5 @@ INNER JOIN pedidos p ON u.id = p.usuario_id;
 ---
 
 **Recuerda:** Practica con ejemplos y consulta la documentación oficial de tu gestor de base de datos (MySQL, PostgreSQL, SQL Server, etc.).
+
+Modelo ER

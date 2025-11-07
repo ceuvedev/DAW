@@ -17,6 +17,7 @@ for i in range(1, 5):
     while True:
         #Pido el valor de la canasta
         canasta = int(input("Puedes indicarme el valor de la canasta? "))
+        #Esta parte es para calcular la diferencia y max, no está bien implementada, hace el calculo con una iteración tarde y el max no cambia
         diferencia = abs(puntuacionParcialA - puntuacionParcialB)
         max = 0
         if (diferencia > max):
@@ -50,7 +51,7 @@ for i in range(1, 5):
             print(f"{equipoB}: {puntuacionFinalB} puntos")
             print (f"Diferencia actual {diferencia} \nDiferencia máxima {max}")
             print("--------------")
-        #Este código es para 
+        #Este elif es para otros datos que no cuadren con lo que se pide
         elif canasta < 0 and canasta > 3 and equipo != "A" or equipo != "B":
             print("Datos invalidos, ingrese de nuevo")
         #Esta parte de código es para el contador de tiros y su valor.
@@ -74,4 +75,3 @@ print(f"Tiros libres {contador1}")
 print(f"Tiros dobles {contador2}")
 print(f"Tiros triples {contador3}")
 
-# Problemas actuales: No se como implementar el contador de manera correcta la diferencia, el acumulador de maxima lo he intentado implementar pero guarda el valor. Otro punto que antes funcionaba y ahora no, es que siempre aparece error cuando doy los puntos, pero suma correctamente.
