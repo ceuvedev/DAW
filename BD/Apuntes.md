@@ -1,94 +1,38 @@
-# Apuntes de Bases de Datos SQL
+## Tema 3 Diseño de BB.DD. El modelo relacional
 
-## 1. ¿Qué es SQL?
-SQL (Structured Query Language) es un lenguaje estándar para gestionar bases de datos relacionales. Permite crear, modificar, consultar y administrar datos.
+### Introducción
 
-## 2. Tipos de Sentencias SQL
+El objetivo del modelo relacional es obtener un conjunto de relaciones sin redundancia y que cumplan las necesidades requeridas.
 
-### a) DDL (Data Definition Language)
-- `CREATE`: Crea tablas, vistas, índices, etc.
-- `ALTER`: Modifica la estructura de una tabla.
-- `DROP`: Elimina tablas, vistas, etc.
+Para eso sirve el modelo relacional, trasformando el esquema ER a tablas.
 
-```sql
-CREATE TABLE usuarios (
-    id INT PRIMARY KEY,
-    nombre VARCHAR(50),
-    email VARCHAR(100)
-);
-```
+### 2 Conceptos básicos del modelo relacional
 
-### b) DML (Data Manipulation Language)
-- `INSERT`: Inserta datos.
-- `UPDATE`: Modifica datos existentes.
-- `DELETE`: Elimina datos.
+#### Modelos y esquemas
 
-```sql
-INSERT INTO usuarios (id, nombre, email) VALUES (1, 'Ana', 'ana@email.com');
-UPDATE usuarios SET nombre = 'Ana Gómez' WHERE id = 1;
-DELETE FROM usuarios WHERE id = 1;
-```
+En la fase de diseño transformamos el **esquema conceptual** a un **esquema lógico**
 
-### c) DQL (Data Query Language)
-- `SELECT`: Consulta datos.
+[imagen](/BD/imagenes/modeloesquema.png)
 
-```sql
-SELECT nombre, email FROM usuarios WHERE id = 1;
-```
+Diferencias entre modelo y esquema:
+    Modelo: es una herramienta para representar datos
+    Esquema: es la representación de esos datos
 
-### d) DCL (Data Control Language)
-- `GRANT`: Concede permisos.
-- `REVOKE`: Revoca permisos.
+#### Elementos del modelo relacional
 
-## 3. Cláusulas Importantes
+En la tabla se ven los distintos tipos de elementos y lo que equivale  según  la fase en la que está
 
-- `WHERE`: Filtra registros.
-- `ORDER BY`: Ordena resultados.
-- `GROUP BY`: Agrupa resultados.
-- `HAVING`: Filtra grupos.
+||Fase Analisis|Fase Diseño|Implementación|
+|---|---|---|---|
+|Model|ER|Relacional|Físico|
+|Objetos|Entidades y relaciones|Relaciones|Tablas|
+|Características|Atributos|Campos|Columnas|
+|Datos|Ocurrencias|Registros/Tuplas|Filas|
 
-## 4. Relaciones entre Tablas
+El modelo relacional representa una BD como un conjunto de relaciones.
 
-- **Clave primaria (PRIMARY KEY):** Identifica de forma única cada registro.
-- **Clave foránea (FOREIGN KEY):** Relaciona dos tablas.
-
-```sql
-CREATE TABLE pedidos (
-    id INT PRIMARY KEY,
-    usuario_id INT,
-    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
-);
-```
-
-## 5. Funciones de Agregación
-
-- `COUNT()`, `SUM()`, `AVG()`, `MIN()`, `MAX()`
-
-```sql
-SELECT COUNT(*) FROM usuarios;
-SELECT AVG(precio) FROM productos;
-```
-
-## 6. Joins (Uniones)
-
-- `INNER JOIN`: Solo registros coincidentes.
-- `LEFT JOIN`: Todos los de la izquierda y coincidentes de la derecha.
-- `RIGHT JOIN`: Todos los de la derecha y coincidentes de la izquierda.
-
-```sql
-SELECT u.nombre, p.id
-FROM usuarios u
-INNER JOIN pedidos p ON u.id = p.usuario_id;
-```
-
-## 7. Buenas Prácticas
-
-- Usar nombres descriptivos para tablas y columnas.
-- Normalizar la base de datos para evitar redundancias.
-- Realizar copias de seguridad periódicas.
-
----
-
-**Recuerda:** Practica con ejemplos y consulta la documentación oficial de tu gestor de base de datos (MySQL, PostgreSQL, SQL Server, etc.).
-
-Modelo ER
+**Las claves** sirven para en el modelo relacional no haya ocurrencias duplicadas. Hay dos tipos de claves: claves candidatas y claves externas.
+Es un atributo (o más de uno) de la tabla que cumplen 2 condiciones:  
+    Unicidad: No puede haver dos tuplas de relacion con el mismo valor de atributo
+    Minimalismo: No sobre ningún atributo de la clave
+    
