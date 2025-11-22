@@ -1,0 +1,91 @@
+/*Tipografía global*/
+* {
+    font-family: "Verdana", sans-serif;
+}
+
+p:hover {
+    font-size: 18px;
+}
+h1 {
+    color: rgb(17, 110, 82);  
+    font-size: 40px;
+}
+
+h2 {
+    color: rgb(192, 167, 23);
+    font-size: 30px;
+}
+
+h3 {
+    color: rgb(16, 61, 10);
+    font-size: 20px;
+}
+/* Menu de navegación */
+nav {
+    background: burlywood;
+    color: rgb(199, 21, 21);
+    display: inline;
+    position: sticky;
+    top: 0;
+}
+
+nav:hover {
+    background: burlywood;
+    color: rgb(153, 140, 42);
+    display: inline;
+    font-size: 30px;
+    position: sticky;
+    top: 0;
+}
+
+/* Contenido secciones */
+#main {
+    background: rgb(252, 224, 188);
+    color: rgb(43, 226, 186);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+#enlaces {
+    background: burlywood;
+    color: rgb(43, 226, 186);
+    border-radius: 30px;
+    padding: 15px;
+}
+
+#horario {
+    background: rgb(90, 67, 36);
+    color: rgb(99, 100, 15);
+    border-radius: 30px;
+    padding: 15px;
+}
+#iframe {
+    background: rgb(43, 28, 9);
+    color: blueviolet;
+    border-radius: 30px;
+    padding: 15px;
+}
+/* Tablas*/
+table {
+    border: 1px;
+}
+
+table tr:nth-child(odd) {
+    background: red; 
+}
+
+table tr:nth-child(even) {
+    background: salmon;  
+}
+
+/* Hover opcional */
+table tr:hover {
+    background: blue;
+}
+
+img {
+    float: left;
+}
+ifram{
+    float:right;
+}

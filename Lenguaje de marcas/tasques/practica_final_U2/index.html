@@ -1,44 +1,152 @@
+ <!-- 1a parte del ejercicio -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Final HTML-CSS-</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- 2da parte del ejercicio -->
     <header>
         <h1>Chan Voong Tran</h1>
         <h2>Práctica final, Unidad 2</h2>
     </header>
-    <br>
-    <nav>
+    <hr>
+     <!-- 3a parte del ejercicio -->
+    <nav id="nav">
         <ul>
             <li>
-                <a>Inicio</a>
+                <a href="#inicio">Inicio</a>
             </li>
             <li>
-                <a>Aficiones</a>
+                <a href="#aboutme">Sobre mí</a>
             </li>
             <li>
-                <a>Enlaces</a>
+                <a href="#instituto">Instituto</a>
             </li>
         </ul>
     </nav>
 
     <main>
-        <div id="inicio">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas doloremque asperiores ipsa temporibus aut aperiam, nobis praesentium vitae voluptatum. Totam beatae dolores amet possimus quasi iure ipsam blanditiis reprehenderit!</p>
+         <!-- 1 seccion de main -->
+        <div id="main">
+            <section>
+                <h3>Sobre mí</h3z>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptas doloremque asperiores ipsa temporibus aut aperiam, nobis praesentium vitae voluptatum. Totam beatae dolores amet possimus quasi iure ipsam blanditiis reprehenderit!</p>
+            </section>
+            <section>
+                <!-- Utilizamos los simbolos <> aquí-->
+                <h3>Lista ordenada &ltol&gt</h3>
+                <ol>
+                    <li>Contar ovejas</li>
+                    <li>Regar plantas</li>
+                    <li>Subir escaleras</li>
+                </ol>
+                <h3>Lista desordenada &ltul&gt</h3>
+                <ul>
+                    <li>Calculadora</li>
+                    <li>Bloc de notas</li>
+                    <li>Buscaminas</li>
+                </ul>
+                <h3>Definiciones</h3>
+                <dl>
+                    <dt>Servidor</dt>
+                    <dd>Máquina que ofrece servicios</dd>
+                    <dt>Cliente</dt>
+                    <dd>Máquina que accede a servicios</dd>
+                </dl>
+                <img>
+            </section>
+            <section>
+                <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                <br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+                <br>
+                <label for="comentario">Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Dime algo bonito" required></textarea><br>
+                <br>
+                <label>
+                    <input type="checkbox" name="condiciones" required>
+                    Aceptar condiciones
+                </label>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+            </section>
+        </div>
 
-        </div>
-        <div id="aficiones">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi consectetur minima tempora commodi optio cupiditate magnam, vitae veniam perferendis, recusandae distinctio, asperiores reprehenderit. Voluptas architecto quas dignissimos voluptatibus similique nihil?</p>
-        </div>
         <div id="enlaces">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius possimus dicta sint voluptatibus mollitia culpa amet doloremque nisi qui et, facilis, illum consequatur at quisquam aliquam voluptates quae! A, accusamus?</p>
+            <p>Saludos desde Tavernes de la Valldigna</p>
         </div>
-        <div id="horario"></div>
-        <div id="simbolos"></div>
-        <div id="iframe"></div>
+        <div id="horario">
+            <table>
+                <tr>
+                    <th></th>
+                    <th colspan="4">HORARIOS</th>
+
+                    
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    
+                </tr>
+                <tr>
+                    <th>Hora 1</th>
+                    <th rowspan="2">Programación</th>
+                    <th>Libre</th>
+                    <th>Inglés</th>
+                    <th>BBDD</th>
+                </tr>                
+                <tr>
+                    <th>Hora 2</th>
+                    <th>Libre</th>
+                    <th>IPO1</th>
+                    <th>LMI</th>
+                </tr>                
+                <tr>
+                    <th>Hora 3</th>
+                    <th>Entornos</th>
+                    <th>Libre</th>
+                    <th>Proyecto</th>
+                    <th>Tutoria</th>
+                </tr>     
+                <tr>
+                    <th>Hora 4</th>
+                    <th colspan="4">Patio</th>
+
+                </tr>               
+                <tr>
+                    <th>Hora 5</th>
+                    <th>BBDD</th>
+                    <th>Libre</th>
+                    <th>BBDD</th>
+                    <th>Entornos</th>
+                </tr>                
+                <tr>
+                    <th>Hora 6</th>
+                    <th>Sistemas</th>
+                    <th>Libre</th>
+                    <th>Programación</th>
+                    <th>Sistemas</th>
+                </tr>
+            </table>
+        </div>
+
+        <div id="iframe">
+            <p>No te puedes perder a Jaume II el Just dando clase</p>
+            <img src="img/jaumeii.png" alt="Rey dando cátedra" width="600" height="450">
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774.3210180460993!2d-0.2611713765481602!3d39.07722462219983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c7636092196d%3A0x82082fc32f3032f7!2sIES%20Jaume%20II%20el%20Just!5e0!3m2!1ses!2ses!4v1763770379551!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
 
     <footer>
