@@ -1,7 +1,7 @@
 # Lenguaje de marcas
 
-Profesor:
-email:
+Profesor: David Mlina  
+email: d.molinafernandez@edu.gva.es
 
 ## XML
 
