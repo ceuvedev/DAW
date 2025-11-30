@@ -1,19 +1,23 @@
+#importamos librería random para poder usar la funcion random
 import random
-
+#imprimimos la bienvenida del juego
 print("Welcome to joc de la Oca")
+
+#declaramos todas las variables que usaremos para el juego de la oca
 casillasTotales = int(input("Cuántas casillas quieres que tenga el juego? ")) 
-print(casillasTotales)
 posicionActual = 0
 ultimaTirada = 0
+numTiros = 0
 #hay que hacer un bucle para que el juego no acabe hasta que se cumpla la condicion de que se llegue a las casillas totales. de momento la logica ha aplicar, es que se termine el bucle pasado las casillasTotales
 
 while posicionActual < casillasTotales:
     tirada = random.randint(1, 6)    
-    posicionActual = posicionActual + tirada    
+    posicionActual = posicionActual + tirada
+    numTiros += 1
     print(f"He sacado {tirada}, Estoy en la posición {posicionActual}")
     #damos por el juego finalizado cuando la posicion actual coincide con la ultima casilla
     if posicionActual == casillasTotales:
-        print(f"Has ganado la OCA")
+        print(f"Has ganado la OCA con {numTiros} de tiradas")
         break
     #con esta condicion, si cae en multiplo de 5, es una oca, sumo 5 casillas
     if posicionActual % 5 == 0:        
