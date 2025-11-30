@@ -7,7 +7,7 @@ posicionActual = 0
 ultimaTirada = 0
 #hay que hacer un bucle para que el juego no acabe hasta que se cumpla la condicion de que se llegue a las casillas totales. de momento la logica ha aplicar, es que se termine el bucle pasado las casillasTotales
 
-while True:
+while posicionActual < casillasTotales:
     tirada = random.randint(1, 6)    
     posicionActual = posicionActual + tirada    
     print(f"He sacado {tirada}, Estoy en la posición {posicionActual}")
@@ -22,9 +22,9 @@ while True:
     if posicionActual > casillasTotales:
         rebote = (posicionActual - casillasTotales) * 2
         posicionActual = posicionActual - rebote
-        print(f"Me he pasado {rebote} casillas, vuelvo a {posicionActual}")
+        print(f"Me he pasado {casillasTotales - posicionActual} casillas, vuelvo a la casilla {posicionActual}")
     if tirada == 6 & ultimaTirada == 6:
         posicionActual = 0
-        print(f"Te vas al catre, a empezar de nuevo")
+        print(f"Arrancada de Marquez, parada de Casillas. Dos 6, comienza de nuevo")
     ultimaTirada = tirada
     
