@@ -21,21 +21,24 @@ h3 {
     font-size: 20px;
 }
 /* Menu de navegación */
-nav {
+nav,li {
     background: burlywood;
     color: rgb(199, 21, 21);
-    display: inline;
+    text-transform: capitalize;
+    display: inline-block;;
     position: sticky;
     top: 0;
+    align-content: center;
 }
 
-nav:hover {
-    background: burlywood;
+nav,li :hover {
+    background: rgb(6, 77, 8);
     color: rgb(153, 140, 42);
-    display: inline;
-    font-size: 30px;
+    display: inline-block;;
+    font-size: 20px;
     position: sticky;
     top: 0;
+    align-content: center;
 }
 
 /* Contenido secciones */
@@ -86,6 +89,17 @@ table tr:hover {
 img {
     float: left;
 }
-ifram{
+iframe {
     float:right;
+}
+
+.fondo {
+  background-image: url("img/fondo.jpg");
+  background-size: cover;     /* La imagen cubre toda la sección */
+  background-position: center; /* Centrada */
+  background-repeat: no-repeat; /* No se repite */
+  color: white;                /* Texto claro sobre fondo oscuro */
+  padding: 30px;
+  border-radius: 12px;
+  background-attachment: fixed
 }

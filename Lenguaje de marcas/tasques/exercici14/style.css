@@ -1,0 +1,41 @@
+/* ---------------------------------- */
+/* PSEUDO‑ELEMENTOS — hoja de estilo */
+/* ---------------------------------- */
+
+/* 1. Primer línea de cada párrafo */
+p::first-line {
+  color: red;
+  font-variant: small-caps;
+  font-size: 19px;
+}
+
+/* 2. Primera letra de cada párrafo */
+p::first-letter {
+  color: red;
+  font-size: xx-large;
+}
+
+/* unvisited link */
+a:link {
+  color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+  color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+  color: #0059ff;
+}
+
+/* selected link */
+a:active {
+  color: #7bff00;
+}
+
+*::selection {
+  color: rgb(18, 16, 140);
+  background: yellow;
+}
