@@ -37,3 +37,4 @@ Hay normas tanto nacionales como internacionales que garantizan este derecho
 | Equipos de trabajo | Facilitar a las peronas trabajadoras los equipos de trabajo adecuados y adaptados al trabajo que se va a realizar. |
 | Equipos de protección individual | Proporcionar a las personas trabajadoras equipos de protección individuales cuando los riesgos no se puedan evitar con medios de protección colectiva o con métodos de organización del trabajo. | 
 |Coordinación de actividades preventivas | Cuando en un mismo centro de trabajo estén empleadas dos o más empresas o personas trabajadoras autónomas, es necesario que adopten medidas de coordinación en materia de prevención de riesgos laborales. |
+
