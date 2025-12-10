@@ -1,3 +1,7 @@
+
+[Curso](https://joamuran.net/curs24_25/edd)
+
+
 # SCRUM master
 
 Metodologías de desarrolo agil.

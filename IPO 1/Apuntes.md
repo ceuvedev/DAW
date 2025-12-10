@@ -3,8 +3,12 @@
 Profesora:
 email:
 
+## Unidad 1
+
 ## Introducción
 
+
+### 1.1 El derecho a la seguridad y a la salud en el trabajo
 La salud ya no es la ausencia de enfermedad, la OMS y la OIT proponien una definición más abierta.
 
 Salud = Bienestar
@@ -21,6 +25,36 @@ Hay normas tanto nacionales como internacionales que garantizan este derecho
     - LPRL: La ley de prevención de riesgos laborales reconoce el derecho de las personas trabajadoras a una protección eficaz en materia de seguridad y salud en el trabajo.
     - Ley del Estatuto de los trabajadores: reconoce el derecho de las personas trabajadoras a su integridad y a una adecuada política de prevención de riesgos laborales.
 
+### 1.3 Las condiciones de trabajo y los factores de riesgo laboral
+
+Causa
+Factor de riesgo: Condición laboral capa de provocar un daño a la salud
+
+Riesgo Laboral
+Posibilidad de sufrir un daño derivado del trabajo
+
+Consecuencia
+Daño: Lesión o patología sobre la salud
+
+
+Clasificación
+
+- Conciciones de seguridad
+    - Lugares de trabajo
+    - Equipos de trabajo
+    - Instalaciones eléctricas
+    - Incendios
+- Condiciones ambientales
+    - Agentes físicos
+    - Agentes químicos
+    - Agentes biológicos
+- Carga de trabajo
+    - Carga física
+    - Carga mental
+- Organización del trabajo
+    - Contenido del trabajo
+    - Organización del trabajo
+- 
 
 | Obligación | Descripción |
 |:----:|-------|
@@ -37,4 +71,3 @@ Hay normas tanto nacionales como internacionales que garantizan este derecho
 | Equipos de trabajo | Facilitar a las peronas trabajadoras los equipos de trabajo adecuados y adaptados al trabajo que se va a realizar. |
 | Equipos de protección individual | Proporcionar a las personas trabajadoras equipos de protección individuales cuando los riesgos no se puedan evitar con medios de protección colectiva o con métodos de organización del trabajo. | 
 |Coordinación de actividades preventivas | Cuando en un mismo centro de trabajo estén empleadas dos o más empresas o personas trabajadoras autónomas, es necesario que adopten medidas de coordinación en materia de prevención de riesgos laborales. |
-

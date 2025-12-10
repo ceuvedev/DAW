@@ -1,10 +1,15 @@
 #importamos librería random para poder usar la funcion random
 import random
-#imprimimos la bienvenida del juego
+
 print("Welcome to joc de la Oca")
 
+
+casillas = input("Cuántas casillas quieres que tenga el juego? ")
+while not casillas.isnumeric() and int(casillas) < 10 and int(casillas) > 100:
+    print(f"Dame datos correctos")
+    casillas = input("Cuántas casillas quieres que tenga el juego? ")
+
 #declaramos todas las variables que usaremos para el juego de la oca
-casillasTotales = int(input("Cuántas casillas quieres que tenga el juego? ")) 
 posicionActual = 0
 ultimaTirada = 0
 numTiros = 0

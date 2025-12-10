@@ -1,0 +1,40 @@
+/*El exercicio pide enlacar un estilo css externo al html*/
+
+/*Hay tres clases para cada h1*/
+
+.uno + p {
+    text-align: right;
+    text-transform: uppercase;
+    color: rgb(81, 29, 130);
+    background-color: rgb(96, 191, 59);
+    text-indent: 35% ;
+    letter-spacing: 4px;
+
+}
+
+
+.dos + p{
+    text-align: left;
+    text-transform: lowercase;
+    color: greenyellow;
+    background-color: purple;
+    text-indent: 20% ;
+    letter-spacing: 10px;
+}
+.tres + p {
+    text-align: left;
+    text-transform: lowercase;
+    color: greenyellow;
+    background-color: purple;
+    text-indent: 20% ;
+    letter-spacing: 10px;
+}
+
+.tres + p:hover {
+    text-align: right;
+    text-transform: uppercase;
+    color: rgb(81, 29, 130);
+    background-color: rgb(96, 191, 59);
+    text-indent: 35% ;
+    letter-spacing: 4px;
+}
