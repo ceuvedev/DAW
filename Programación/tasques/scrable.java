@@ -27,17 +27,18 @@ public class Main{
         char[][] mPunts = new char[files][columnes];
         char[][] mFitxes = new char[files][columnes];
 
-        // 1.3 Posar els "colors" de les caselles
+        //1.3 Posar els "colors" de les caselles
         for (int i = 0; i < files; i++) {
             for (int j = 0; j < columnes; j++) {
                 mPunts[i][j] = ' '; // Posem un espai en blanc inicial
             }
         }
-        for (int i = 0; i < columnes; i++) {
-            mPunts[centroC + i][centroF + i] = 'p';
-            mPunts[centroC + i][centroF - i] = 'p';
-            mPunts[centroC - i][centroF - i] = 'p';
-            mPunts[centroC - i][centroF + i] = 'p';
+        int limit = (files < columnes) ? centroF : centroC;
+        for (int i = 0; i <= limit; i++) {
+            mPunts[centroF + i][centroC + i] = 'p';
+            mPunts[centroF + i][centroC - i] = 'p';
+            mPunts[centroF - i][centroC - i] = 'p';
+            mPunts[centroF - i][centroC + i] = 'p';
         }
 
 
