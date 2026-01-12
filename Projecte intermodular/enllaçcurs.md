@@ -41,3 +41,5 @@ Lo que abarca el producto y la visión de la misma
 Actividades o fases del analisis de requisitos
 
     
+[text](https://abeneto.github.io/PI2526/ud2/index.html)
+[text](https://abeneto.github.io/PI2526/ud2/24Practica2/)
