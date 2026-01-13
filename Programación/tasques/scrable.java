@@ -54,14 +54,16 @@ public class Main{
         mPunts[files-1][centreC] = 'P';
         mPunts[files-1][columnes-1] = 'P';
 
-        // Random 5 l
+        // Random 5 I
 
-        for (int i = 0; i <= 5; i++) {
-            // Busquem dades dins del primer quadrant
+        for (int i = 0; i < 5; i++) {
             int numF;
             int numC;
-            numF = (int)(Math.random()*centreF) + 1;
-            numC = (int)(Math.random()*centreC) + 1;
+            do {
+                // Busquem dades dins del primer quadrant
+                numF = (int)(Math.random()*centreF) + 1;
+                numC = (int)(Math.random()*centreC) + 1;
+            } while (mPunts[numF][numC] != ' ');
             // 1er quadrant
             mPunts[numF][numC] = 'I';
             // 3er quadrant
@@ -70,28 +72,36 @@ public class Main{
             mPunts[files - numF -1][columnes - numC-1] = 'I';
             // 2n quadrant
             mPunts[numF][columnes - numC -1] = 'I';
+        }
+        // Patró GRID L
+        for (int i = 2; i <= limit; i = i + 4) {
+            for (int j = 2; j <= limit; j = j + 4) {
+                mPunts[centreF + i][centreC + j] = 'L';
+                mPunts[centreF + i][centreC - j] = 'L';
+                mPunts[centreF - i][centreC + j] = 'L';
+                mPunts[centreF - i][centreC - j] = 'L';
+            }
 
         }
-        // Patró L
-        
 
-        // 1. Imprimir números de columnas (cabecera)
-        System.out.print("   "); // Espacio inicial para compensar el número de fila
+        // 1. Imprimir els números de les columnes
+        System.out.print("   "); //
         for (int j = 0; j < columnes; j++) {
-            System.out.print(((j + 1)%10) + " ");
+            // Fem servir %10 per a mostrar només l'última xifra (coordenada "humana" j+1)
+            System.out.print(((j + 1) % 10) + " ");
         }
-        System.out.println(); // Salto de línea tras la cabecera
+        System.out.println(); // Salt de línia després de la capçalera
 
-        // 2. Recorrer la matriz para imprimir filas y contenido
+        // 2. Recórrer la matriu per a imprimir les files i el contingut
         for (int i = 0; i < files; i++) {
-            // Imprimir el número de fila (coordenada)
-            System.out.print(((i + 1)%10) + "  ");
+            // Imprimir el número de la fila actual (només l'últim dígit)
+            System.out.print(((i + 1) % 10) + "  ");
 
             for (int j = 0; j < columnes; j++) {
-                // Imprimir el contenido de la celda seguido de un espacio
+                // Imprimir el contingut de la celda seguit d'un espai per a fer la graella
                 System.out.print(mPunts[i][j] + " ");
             }
-            System.out.println(); // Salto de línea al terminar cada fila
+            System.out.println(); // Salt de línia en acabar cada fila
         }
     }
 }
