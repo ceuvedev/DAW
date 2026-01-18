@@ -86,22 +86,16 @@ public class Main{
 
         // 1. Imprimir els números de les columnes
         System.out.print("   "); //
-        for (int j = 0; j < columnes; j++) {
-            // Fem servir %10 per a mostrar només l'última xifra (coordenada "humana" j+1)
+        for (int j = 0; j < columnes; j++) {       
             System.out.print(((j + 1) % 10) + " ");
         }
-        System.out.println(); // Salt de línia després de la capçalera
-
-        // 2. Recórrer la matriu per a imprimir les files i el contingut
+        System.out.println(); 
         for (int i = 0; i < files; i++) {
-            // Imprimir el número de la fila actual (només l'últim dígit)
             System.out.print(((i + 1) % 10) + "  ");
-
             for (int j = 0; j < columnes; j++) {
-                // Imprimir el contingut de la celda seguit d'un espai per a fer la graella
-                System.out.print(mPunts[i][j] + " ");
+                        System.out.print(mPunts[i][j] + " ");
             }
-            System.out.println(); // Salt de línia en acabar cada fila
+            System.out.println(); 
         }
     }
 }
