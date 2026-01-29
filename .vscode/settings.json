@@ -1,14 +1,31 @@
 {
+    /* Motor de la extensión: Usamos el 17 por estabilidad */
     "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-temurin-jdk",
+
+    /* Diccionario de versiones disponibles en el portátil */
     "java.configuration.runtimes": [
         {
-            "name": "JavaSE-17",
-            "path": "/usr/lib/jvm/java-17-temurin-jdk"
+            "name": "JavaSE-21",
+            "path": "/usr/lib/jvm/java-21-openjdk",
+            "default": true
         },
         {
             "name": "JavaSE-25",
-            "path": "/usr/lib/jvm/java-25-openjdk",
-            "default": true
+            "path": "/usr/lib/jvm/java-25-openjdk"
+        },
+        {
+            "name": "JavaSE-Latest",
+            "path": "/usr/lib/jvm/java-latest-openjdk"
         }
+    ],
+
+    /* Configuración extra para mejorar la fluidez en el portátil */
+    "java.autostart": true,
+    "java.debug.settings.showStepFilters": false,
+    "java.completion.favoriteStaticMembers": [
+        "org.junit.Assert.*",
+        "org.junit.Assume.*",
+        "org.junit.jupiter.api.Assertions.*",
+        "org.mockito.Mockito.*"
     ]
 }

@@ -1,0 +1,96 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  background: #003d7a;
+  color: white;
+}
+.header-top {
+  padding: 0.5rem;
+  text-align: center;
+  background: #002e61;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* HERO */
+.hero {
+  background: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* OFERTAS */
+.offers {
+  padding: 2rem;
+}
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap: 1rem;
+}
+
+/* CATEGORÍAS */
+.categories {
+  background: #fafafa;
+  padding: 2rem;
+}
+.cat-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* MARCAS */
+.brands {
+  padding: 2rem;
+}
+.brands-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+  }
+}
