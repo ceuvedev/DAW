@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><div id="wrapper">
+    <canvas id="wheel" width="400" height="400"></canvas>
+    <button id="spinBtn">¡GIRAR!</button>
+</div>
+
+<script>
+    const canvas = document.getElementById('wheel');
+    const ctx = canvas.getContext('2d');
+    const prizes = ["$10", "$50", "LOSE", "$20", "$100", "SKIP"];
+    let currentRotation = 0;
+
+    // Función simple para dibujar (Simplificada)
+    function drawWheel() {
+        const arc = (2 * Math.PI) / prizes.length;
+        prizes.forEach((prize, i) => {
+            ctx.beginPath();
+            ctx.fillStyle = i % 2 === 0 ? '#ff4d4d' : '#2d2d2d';
+            ctx.moveTo(200, 200);
+            ctx.arc(200, 200, 200, i * arc, (i + 1) * arc);
+            ctx.fill();
+            // Aquí añadirías el texto del premio
+        });
+    }
+
+    // Lógica del giro
+    document.getElementById('spinBtn').onclick = () => {
+        const extraDegrees = Math.floor(Math.random() * 360) + 1800; // 5 vueltas mín.
+        currentRotation += extraDegrees;
+        canvas.style.transform = `rotate(${currentRotation}deg)`;
+        canvas.style.transition = "transform 4s cubic-bezier(0.1, 0, 0.2, 1)";
+    };
+
+    drawWheel();
+</script>
+
+<style>
+    #wheel { transition: transform 4s ease-out; border-radius: 50%; border: 5px solid #333; }
+    #wrapper { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+    button { padding: 10px 20px; font-size: 1.2rem; cursor: pointer; }
+</style>
+    
+</body>
+</html>
