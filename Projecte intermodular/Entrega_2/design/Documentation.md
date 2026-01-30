@@ -36,20 +36,34 @@
 ### Diagrama de componentes
 
 @startuml
+skinparam componentStyle rectangle
 
-package "Gestion de usuarios" {
-  [Cliente]
-  [Administradores]
+package "Aplicación Web (Frontend)" {
+  [Interfaz de Usuario]
 }
 
-package "Servidor" {
-  [Interfaz de usuario]
+package "Servidor Backend\n(API REST)" {
+  [Gestión de Usuarios]
+  [Gestión de Citas]
+  [Gestión de Horarios]
+  [Autenticación]
 }
 
-package "Cliente" {
-  [Interfaz de usuario]
+package "Base de Datos" {
+  [Usuarios]
+  [Citas]
+  [Horarios]
 }
 
-package "Cliente" {
-  [Interfaz de usuario]
-}
+[Clientes] ..> UI: Utiliza
+[Administradores] ..> UI: Utiliza
+Frontend ..> Backend : HTTP / REST
+Backend ..> DB : JDBC / ORM
+
+@enduml
+
+
+Interfaz de usuario: 
+Sistema de gestión de citas
+Base de datos
+Modulos funcionales:
