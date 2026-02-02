@@ -77,12 +77,12 @@ component "Sistema de citas para Ópticas" {
 }
 
 component "Control de citas" {
-    [Reservar cita]
-    [Ver cita]
-    [Cancelar cita]
-    Manager --> [Reservar cita]
-    Manager --> [Ver cita]
-    Manager --> [Cancelar cita]
+      [Reservar cita]
+      [Ver cita]
+      [Cancelar cita]
+      Manager --> [Reservar cita]
+      Manager --> [Ver cita]
+      Manager --> [Cancelar cita]
 }
 
 component "Gestión de Usuarios" {
@@ -92,28 +92,34 @@ component "Gestión de Usuarios" {
     UI --> [Administradores]
 }
 component "Agenda" {
-    [Reservar cita]
-    [Ver cita]
-    [Cancelar cita]
-    Manager --> [Reservar cita]
-    Manager --> [Ver cita]
-    Manager --> [Cancelar cita]
+      [Reservar cita]
+      [Ver cita]
+      [Cancelar cita]
+      Manager --> [Reservar cita]
+      Manager --> [Ver cita]
+      Manager --> [Cancelar cita]
 }
 
 component "Notificaciones" {
-    [Enviar notificación]
-    [Enviar recordatorios]
-    [Alerta de cancelación]
-    Manager --> [Enviar notificación]
-    Manager --> [Enviar recordatorios]
-    Manager --> [Alerta de cancelación]
+      [Enviar notificación]
+      [Enviar recordatorios]
+      [Alerta de cancelación]
+      Manager --> [Enviar notificación]
+      Manager --> [Enviar recordatorios]
+      Manager --> [Alerta de cancelación]
 }
 
 
+component "Base de Datos" {
+  [Usuarios]
+  [Citas]
+  [Fichas]
+}
+
 [Clientes] ..> UI: Utiliza
 [Administradores] ..> UI: Utiliza
-UI ..> Manager : HTTP / Peticiones
-Manager ..> DB : Almacena/recupera
+Frontend ..> Backend : HTTP / Peticiones
+Backend ..> DB : Almacena/recupera
 
 @enduml
 
