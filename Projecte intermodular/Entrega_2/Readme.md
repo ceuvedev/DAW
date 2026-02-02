@@ -40,3 +40,12 @@ El sistema se divide en un frontend web, encargado de la interacción con el usu
 Adicionalmente, el backend puede comunicarse con un servicio de notificaciones para el envío de confirmaciones de citas.
 
 ![Diagrama de componentes](design/diagramaComponentesbrillo.png)
+
+### UI/UX
+
+![Entrada](design/login.png)
+![Dashboard](design/dashboard.png)
+![Calendario](design/calendario.png)
+![Agenda](design/agenda.png)
+![Ficha](design/ficha.png)
+![Contacto](design/contacto.png)
