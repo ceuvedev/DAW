@@ -3,8 +3,10 @@
 // Definim la funció
 
 function multiplicador(a, b) {
+// Mostra el núm. inicial (b)
     console.log(b);
-    for (let i = 0; i < a -1; i++) {
+    // Faig un bucle amb el parametres donats. Repetim "a" voltes, cada volta multipliquem b * 2 e imprint
+    for (let i = 1; i < a; i++) {
         b *= 2;
         console.log(b);
     }
