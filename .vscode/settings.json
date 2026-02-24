@@ -4,6 +4,7 @@
 
     /* Diccionario de versiones disponibles en el portátil */
     "java.configuration.runtimes": [
+
         {
             "name": "JavaSE-21",
             "path": "/usr/lib/jvm/java-21-openjdk",
@@ -13,10 +14,6 @@
             "name": "JavaSE-25",
             "path": "/usr/lib/jvm/java-25-openjdk"
         },
-        {
-            "name": "JavaSE-Latest",
-            "path": "/usr/lib/jvm/java-latest-openjdk"
-        }
     ],
 
     /* Configuración extra para mejorar la fluidez en el portátil */
