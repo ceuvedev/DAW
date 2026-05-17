@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojocs SYSTEM "videojocs.dtd">
+
+<videojocs>
+    <page>1</page>
+    <per_page>20</per_page>
+    <total_count>5</total_count>
+    <records>
+        <videojoc>
+            <titulo>Counter-strike 2</titulo>
+            <plataforma>PC</plataforma>
+            <genero>FPS</genero>
+            <any>2012</any>
+            <precio>Free to play</precio>
+            <valoracion>1</valoracion>
+        </videojoc>
+        
+        <videojoc>
+            <titulo>Diablo IV</titulo>
+            <plataforma>Multiplataforma</plataforma>
+            <genero>Rol de acción</genero>
+            <any>2023</any>
+            <precio>49,99€</precio>
+        </videojoc>
+
+        <videojoc>
+            <titulo>Retro Rewind</titulo>
+            <plataforma>PC</plataforma>
+            <genero>Simulador</genero>
+            <any>2026</any>
+            <precio>19,90€</precio>
+        </videojoc>
+
+        <videojoc>
+            <titulo>Velero VR</titulo>
+            <plataforma>PC</plataforma>
+            <genero>Carreras</genero>
+            <any>2024</any>
+            <precio>7,79€</precio>
+        </videojoc>
+
+        <videojoc>
+            <titulo>Elden Ring</titulo>
+            <plataforma>Multiplataforma</plataforma>
+            <genero>Tipo Dark Souls</genero>
+            <any>2022</any>
+            <precio>59,99€</precio>
+        </videojoc>
+    </records>
+</videojocs>

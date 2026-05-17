@@ -2,6 +2,39 @@
 
 ## Planificación
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 📑 Índice
+
+- [Planificación](#planificación)
+- [📑 Índice](#-índice)
+- [Planificación](#planificación-1)
+  - [Análisis inicial del proyecto](#análisis-inicial-del-proyecto)
+    - [Definición del projecto](#definición-del-projecto)
+    - [Identificación de los módulos relacionados](#identificación-de-los-módulos-relacionados)
+    - [Hitos y sprints](#hitos-y-sprints)
+    - [Restricciones y recursos](#restricciones-y-recursos)
+
+
+---
+
+
 ### Análisis inicial del proyecto
 
 #### Definición del projecto

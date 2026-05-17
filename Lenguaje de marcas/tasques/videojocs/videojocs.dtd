@@ -1,0 +1,10 @@
+<!ELEMENT videojocs (videojoc+)>
+
+<!ELEMENT videojoc
+(titulo,plataforma,genero,any,precio?,valoracion?)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT plataforma (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
