@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT videojoc (titulo, plataforma, genero, any, precio, stock)>
+<!ATTLIST videojoc id ID #REQUIRED>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT plataforma (#PCDATA)>
+<!ELEMENT any (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>

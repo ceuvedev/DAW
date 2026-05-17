@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE videojoc SYSTEM "videojoc.dtd">
+
+<videojocs>
+    <videojoc id="1">
+        <titulo>The Legend of Zelda: Breath of the Wild</titulo>
+        <plataforma>Nintendo Switch</plataforma>
+        <genero>Aventura</genero>
+        <any>2017</any>
+        <precio>59.99</precio>
+        <stock>15</stock>
+    </videojoc>
+    <videojoc id="2">
+        <titulo>Elden Ring</titulo>
+        <plataforma>Multiplataforma</plataforma>
+        <genero>RPG</genero>
+        <any>2022</any>
+        <precio>59.99</precio>
+        <stock>8</stock>
+    </videojoc>
+    <videojoc id="3">
+        <titulo>Halo Infinite</titulo>
+        <plataforma>Xbox Series X</plataforma>
+        <genero>Shooter</genero>
+        <any>2021</any>
+        <precio>49.99</precio>
+        <stock>12</stock>
+    </videojoc>
+    <videojoc id="4">
+        <titulo>Cyberpunk 2077</titulo>
+        <plataforma>PC</plataforma>
+        <genero>RPG</genero>
+        <any>2020</any>
+        <precio>39.99</precio>
+        <stock>20</stock>
+    </videojoc>
+    <videojoc id="5">
+        <titulo>God of War Ragnarök</titulo>
+        <plataforma>PlayStation 5</plataforma>
+        <genero>Acción-Aventura</genero>
+        <any>2022</any>
+        <precio>69.99</precio>
+        <stock>0</stock>
+    </videojoc>
+    <videojoc id="6">
+        <titulo>Minecraft</titulo>
+        <plataforma>Multiplataforma</plataforma>
+        <genero>Sandbox</genero>
+        <any>2011</any>
+        <precio>26.99</precio>
+        <stock>50</stock>
+    </videojoc>
+    <videojoc id="7">
+        <titulo>Fortnite</titulo>
+        <plataforma>Multiplataforma</plataforma>
+        <genero>Battle Royale</genero>
+        <any>2018</any>
+        <precio>0</precio>
+        <stock>999</stock>
+    </videojoc>
+    <videojoc id="8">
+        <titulo>Final Fantasy VII Remake</titulo>
+        <plataforma>PlayStation 5</plataforma>
+        <genero>RPG</genero>
+        <any>2020</any>
+        <precio>54.99</precio>
+        <stock>7</stock>
+    </videojoc>
+    <videojoc id="9">
+        <titulo>Starfield</titulo>
+        <plataforma>Multiplataforma</plataforma>
+        <genero>RPG</genero>
+        <any>2023</any>
+        <precio>69.99</precio>
+        <stock>18</stock>
+    </videojoc>
+    <videojoc id="10">
+        <titulo>Super Mario Bros. Wonder</titulo>
+        <plataforma>Nintendo Switch</plataforma>
+        <genero>Plataforma</genero>
+        <any>2023</any>
+        <precio>59.99</precio>
+        <stock>0</stock>
+    </videojoc>
+</videojocs>
