@@ -7,4 +7,12 @@ export class BaseComponent extends HTMLElement {
     
     render(html) {
     this.shadowRoot.innerHTML = html;
-    }}
+    }
+
+    connectCallback() {
+
+    }
+
+}
+
+customElements.define('base-component', BaseComponent);
